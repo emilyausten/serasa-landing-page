@@ -105,11 +105,6 @@
         }
     </style>
      <script type="text/javascript">
-        // Verifica o dispositivo e redireciona antes de carregar outros recursos
-        if (!/iPhone|iPod|iPad|Android|BlackBerry|IEMobile/i.test(navigator.userAgent) && window.innerWidth > 768) {
-            window.location.replace('https://www.omni.com.br/noticias/5-passos-para-limpar-o-nome-e-recuperar-o-credito/');
-        }
-        
         // Funções para controlar a tela de cookies
         function showCookieBanner() {
             document.getElementById('cookieBanner').style.display = 'flex';
@@ -152,25 +147,7 @@
             padding: 0 !important;
         }
     </style>
-    <!-- Meta Pixel Code -->
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1617636535572982');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1617636535572982&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
+
     <style id='wp-block-library-inline-css'>
         :root {
             --wp-admin-theme-color: #007cba;
