@@ -112,23 +112,19 @@
         
         // Funções para controlar a tela de cookies
         function showCookieBanner() {
-            if (!localStorage.getItem('cookieConsent')) {
-                document.getElementById('cookieBanner').style.display = 'flex';
-            }
+            document.getElementById('cookieBanner').style.display = 'flex';
         }
         
         function acceptCookies() {
-            localStorage.setItem('cookieConsent', 'accepted');
             document.getElementById('cookieBanner').style.display = 'none';
         }
         
         function rejectCookies() {
-            localStorage.setItem('cookieConsent', 'rejected');
             document.getElementById('cookieBanner').style.display = 'none';
         }
         
-        // Mostrar banner de cookies quando a página carregar
-        window.addEventListener('load', showCookieBanner);
+        // Mostrar banner de cookies imediatamente
+        showCookieBanner();
     </script>
 
 
@@ -1126,7 +1122,7 @@
     class="page-template page-template-elementor_canvas page page-id-21 wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-7 elementor-page elementor-page-21">
     
     <!-- Tela de Cookies -->
-    <div id="cookieBanner" class="cookie-container" style="display: none;">
+    <div id="cookieBanner" class="cookie-container">
         <div class="v9gXh7">
             <div class="t2rB6p">
                 <span>Preferências de Cookies</span>
